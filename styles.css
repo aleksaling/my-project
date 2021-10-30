@@ -21,6 +21,7 @@ header {
     padding: 10px 0;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .asidepart {
@@ -57,7 +58,7 @@ header {
 
 .box {
     background-color: rgb(243, 214, 135);
-    width: 40%;
+    width: calc(50% - 10px);
     text-align: center;
     padding-top: 19px;
     padding-bottom: 19px;
