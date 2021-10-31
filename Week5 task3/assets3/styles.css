@@ -5,19 +5,20 @@ a {
 }
 
 .navigationbar {
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
-    position: fixed;
-    top: 0px;
+    flex-grow: 1;
     box-sizing: border-box;
     width: 1430px;
     height: 80px;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    z-index: 2;
+
     background-color: white;
 }
 
@@ -37,39 +38,39 @@ a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
-    border: black solid 1px;
     height: 46px;
     height: fit-content;
-
+    border: black solid 1px;
 }
 
 .rightbarelements>* {
-    padding-left: 5px;
     padding-right: 5px;
+    padding-left: 5px;
+
 
 
 }
 
 #searchbar {
+    height: 100%;
     background-color: #ECECEC;
     border-radius: 8px;
-    height: 100%;
+
 }
 
 .mainheader {
-    height: 320px;
     position: relative;
     top: 5px;
+    height: 320px;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
 
     background-image: url(../assets3/Picture.png);
     background-position: center;
     color: azure;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    font-style: bold;
+
 }
 
 h1 {
@@ -81,34 +82,31 @@ h1 {
 
 .form {
     position: relative;
-
+    left: 375px;
+    right: 379px;
+    top: 100px;
     display: flex;
     flex-direction: row;
-    width: fit-content;
     justify-content: flex-start;
     align-items: stretch;
+    width: fit-content;
+    column-gap: 10%;
+    row-gap: 20px;
     box-sizing: content-box;
     width: 900px;
     height: 576px;
     flex-wrap: wrap;
-    position: relative;
-    left: 375px;
-    right: 379px;
-    top: 100px;
-    column-gap: 10%;
-    row-gap: 20px;
 }
 
 #firstname {
     width: 323px;
     height: 48px;
-    border-radius: 8px;
-    background-color: #ECECEC;
     font-family: 'Roboto', sans-serif;
     color: #5A5A5A;
     font-size: 16px;
     font-weight: 600;
-
+    background-color: #ECECEC;
+    border-radius: 8px;
 }
 
 .firstname {
@@ -120,11 +118,12 @@ h1 {
 #lastname {
     width: 323px;
     height: 48px;
-    border-radius: 8px;
-    background-color: #ECECEC;
-    font-family: 'Roboto', sans-serif;
     color: #5A5A5A;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    background-color: #ECECEC;
+
 }
 
 .lastname {
@@ -136,12 +135,11 @@ h1 {
 #email {
     width: 323px;
     height: 48px;
-    border-radius: 8px;
-    background-color: #ECECEC;
-    font-family: 'Roboto', sans-serif;
     color: #5A5A5A;
     font-size: 16px;
-
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECECEC;
+    border-radius: 8px;
 }
 
 .email {
@@ -153,19 +151,17 @@ h1 {
 textarea {
     width: 100%;
     height: 192px;
+    font-size: 16px;
+    color: #5A5A5A;
+    font-family: 'Roboto', sans-serif;
     border-radius: 8px;
     background-color: #ECECEC;
-    font-family: 'Roboto', sans-serif;
-    color: #5A5A5A;
-    font-size: 16px;
-
-
 }
 
 .textarea {
+    width: 84%;
     display: flex;
     flex-direction: column;
-    width: 84%;
     align-self: flex-end;
 }
 
@@ -178,12 +174,11 @@ label {
 
 form>button {
     align-self: flex-end;
-    background-color: #00C3E3;
     color: #ECECEC;
+    background-color: #00C3E3;
     border-radius: 8px;
 }
 
 footer {
     height: 300px;
-
 }
