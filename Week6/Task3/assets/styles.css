@@ -1,0 +1,117 @@
+/*navigation left side */
+
+.nav1 {
+    border: black solid 1px;
+    position: fixed;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% repeat(8, 8%);
+    gap: 5px;
+    justify-content: start;
+    height: 100vh;
+
+
+}
+
+.nav1>* {
+    border: solid red;
+    padding: 10px;
+    margin: 0;
+    align-items: center;
+}
+
+/*navigation top side */
+
+.nav2 {
+
+    border: black solid 1px;
+    position: relative;
+    top: 0px;
+    left: 10%;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 30% 60%;
+    gap: 5px;
+    justify-items: space-between;
+
+}
+
+.leftnav {
+    border: blue solid;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 10% 40%;
+
+}
+
+.rightnav {
+    border: springgreen;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 15% 15% 20% 15% 10% 10%;
+    justify-content: end;
+}
+
+.main {
+    margin: 10px 40px 0px 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(4, 100%);
+    grid-template-areas: "img1 img1 img3 img4"
+        "img2 img2 img3 img4"
+        "img5 img6 img7 img7"
+        "img5 img6 img8 img8";
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url(/Week6/Task3/assets/images/upto50.png);
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url(/Week6/Task3/assets/images/summer50.png);
+}
+
+.img3 {
+    grid-area: img3;
+    background-image: url(/Week6/Task3/assets/images/pinkhair.png);
+}
+
+.img4 {
+    grid-area: img4;
+    background-image: url(/Week6/Task3/assets/images/curlyhair.png);
+}
+
+.img5 {
+    grid-area: img5;
+    background-image: url(/Week6/Task3/assets/images/nightdress.png);
+}
+
+.img6 {
+    grid-area: img6;
+    background-image: url(/Week6/Task3/assets/images/whitehair.png);
+}
+
+.img7 {
+    grid-area: img7;
+    background-image: url(/Week6/Task3/assets/images/bluehair.png);
+    background-position: center;
+}
+
+.img8 {
+    grid-area: img8;
+    background-image: url(/Week6/Task3/assets/images/redhair.png);
+
+}
+
+/* temporary */
+#eight>img {
+    height: 100%;
+
+}
+
+.main>div {
+    border: indigo solid;
+}
