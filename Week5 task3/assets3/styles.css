@@ -15,11 +15,14 @@ a {
     width: 1430px;
     height: 80px;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 1;
+    z-index: 2;
+    background-color: white;
 }
 
-.leftpartnav>a {
-    padding: 16px;
+.leftpartnav>* {
+    padding-right: 16px;
 
 }
 
@@ -31,40 +34,69 @@ a {
 
 .rightpartbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+
+    border: black solid 1px;
+    height: 46px;
+    height: fit-content;
 
 }
 
-.leftbarelements>* {
+.rightbarelements>* {
     padding-left: 5px;
     padding-right: 5px;
 
+
+}
+
+#searchbar {
+    background-color: #ECECEC;
+    border-radius: 8px;
+    height: 100%;
 }
 
 .mainheader {
-    height: 200px;
+    height: 320px;
     position: relative;
-    top: 200px;
+    top: 5px;
     text-align: center;
 
+    background-image: url(../assets3/Picture.png);
+    background-position: center;
+    color: azure;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: bold;
 }
+
+h1 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+
 
 .form {
     position: relative;
-    left: 375px;
-    right: 379px;
-    top: 30px;
+
     display: flex;
     flex-direction: row;
     width: fit-content;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: stretch;
     box-sizing: content-box;
     width: 900px;
     height: 576px;
     flex-wrap: wrap;
-    padding: 10px;
+    position: relative;
+    left: 375px;
+    right: 379px;
+    top: 100px;
+    column-gap: 10%;
+    row-gap: 20px;
 }
 
 #firstname {
@@ -76,11 +108,13 @@ a {
     color: #5A5A5A;
     font-size: 16px;
     font-weight: 600;
+
 }
 
 .firstname {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
 }
 
 #lastname {
@@ -96,6 +130,7 @@ a {
 .lastname {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
 }
 
 #email {
@@ -116,7 +151,7 @@ a {
 }
 
 textarea {
-    width: 671px;
+    width: 100%;
     height: 192px;
     border-radius: 8px;
     background-color: #ECECEC;
@@ -124,11 +159,14 @@ textarea {
     color: #5A5A5A;
     font-size: 16px;
 
+
 }
 
 .textarea {
     display: flex;
     flex-direction: column;
+    width: 84%;
+    align-self: flex-end;
 }
 
 label {
@@ -138,8 +176,14 @@ label {
     padding: 10px;
 }
 
-button {
+form>button {
     align-self: flex-end;
+    background-color: #00C3E3;
+    color: #ECECEC;
+    border-radius: 8px;
+}
 
+footer {
+    height: 300px;
 
 }
