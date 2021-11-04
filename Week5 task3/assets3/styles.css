@@ -43,16 +43,24 @@ a {
 }
 
 .rightpartbar>* {
-    padding-right: ;
     padding-left: 15px;
 }
 
 #searchbar {
-    height: 100%;
+    width: 51%;
+    padding: 17px;
     background-color: #ECECEC;
-    border-radius: 8px;
-
+    border-radius: 8px 0px 0px 8px;
+    border: none;
 }
+
+.rightpartbar>button {
+    border: none;
+    height: 52px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+
 
 .mainheader {
     position: relative;
