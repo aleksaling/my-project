@@ -8,7 +8,6 @@ a {
     position: fixed;
     top: 0px;
     z-index: 2;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,9 +15,8 @@ a {
     flex-wrap: nowrap;
     flex-grow: 1;
     box-sizing: border-box;
-    width: 1430px;
+    width: 100vw;
     height: 80px;
-
     background-color: white;
 }
 
@@ -41,14 +39,12 @@ a {
     height: 46px;
     height: fit-content;
     border: black solid 1px;
+    padding-right: 10px;
 }
 
-.rightbarelements>* {
-    padding-right: 5px;
-    padding-left: 5px;
-
-
-
+.rightpartbar>* {
+    padding-right: ;
+    padding-left: 15px;
 }
 
 #searchbar {
@@ -60,22 +56,20 @@ a {
 
 .mainheader {
     position: relative;
-    top: 5px;
+    top: 16px;
     height: 320px;
+    background-image: url(../assets3/Picture.png);
+    background-position: center;
+}
+
+h1 {
+    padding-top: 133px;
+    text-align: center;
     font-size: 48px;
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
-
-    background-image: url(../assets3/Picture.png);
-    background-position: center;
     color: azure;
-
-}
-
-h1 {
-    padding-top: 130px;
-    padding-bottom: 130px;
 }
 
 
