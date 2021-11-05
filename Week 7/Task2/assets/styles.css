@@ -1,0 +1,177 @@
+/* main container for nav nav and main*/
+
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+.rightnav>a:hover {
+    border-bottom: black 3px solid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Adamina', serif;
+    font-weight: 400;
+}
+
+
+html {
+    margin-left: 5%;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-areas: "nav1 nav2 nav2"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+        "nav1 main main"
+}
+
+
+
+
+
+/*navigation left side */
+
+.nav1 {
+    grid-area: nav1;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% repeat(7, 8%) 1fr;
+    height: 100vh;
+    align-items: center;
+}
+
+.nav1>* {
+
+    padding: 10px 0 4px 0;
+    margin: 0;
+}
+
+#eight>img {
+    width: 20%;
+}
+
+#eight {
+    align-self: end;
+}
+
+/*navigation top part */
+
+.nav2 {
+    grid-area: nav2;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftnav {
+
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 5% 20%;
+    justify-content: start;
+    p
+}
+
+input {
+    border: 0px;
+
+}
+
+.leftnav>img {
+    margin: auto;
+}
+
+.rightnav {
+
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 15% 15% 25% 15% 10% 10%;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+}
+
+.main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 30% 30% 30% 30%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas:
+        "img1 img1 img3 img4"
+        "img2 img2 img3 img4"
+        "img5 img6 img7 img7"
+        "img5 img6 img8 img8";
+    gap: 20px;
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url(/Week6/Task3/assets/images/upto50.png);
+
+    background-size: 100% 100%;
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url(/Week6/Task3/assets/images/summer50.png);
+
+    background-size: 100% 100%;
+}
+
+.img3 {
+    grid-area: img3;
+    background-image: url(/Week6/Task3/assets/images/pinkhair.png);
+
+    background-size: 100% 100%;
+}
+
+.img4 {
+    grid-area: img4;
+    background-image: url(/Week6/Task3/assets/images/curlyhair.png);
+
+    background-size: 100% 100%;
+}
+
+.img5 {
+    grid-area: img5;
+    background-image: url(/Week6/Task3/assets/images/nightdress.png);
+
+    background-size: 100% 100%;
+}
+
+.img6 {
+    grid-area: img6;
+    background-image: url(/Week6/Task3/assets/images/whitehair.png);
+
+    background-size: 100% 100%;
+}
+
+.img7 {
+    grid-area: img7;
+    background-image: url(/Week6/Task3/assets/images/bluehair.png);
+
+    background-size: 100% 100%;
+}
+
+.img8 {
+    grid-area: img8;
+    background-image: url(/Week6/Task3/assets/images/redhair.png);
+
+    background-size: 100% 100%;
+
+}
