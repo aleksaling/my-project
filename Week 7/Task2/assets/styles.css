@@ -11,6 +11,7 @@ a {
     color: black;
     font-family: 'Adamina', serif;
     font-weight: 400;
+
 }
 
 
@@ -82,7 +83,7 @@ html {
     grid-template-rows: 1;
     grid-template-columns: 5% 20%;
     justify-content: start;
-    p
+
 }
 
 input {
@@ -95,13 +96,16 @@ input {
 }
 
 .rightnav {
-
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 15% 15% 25% 15% 10% 10%;
     justify-content: end;
     align-items: center;
     justify-items: center;
+}
+
+.rightnav>* {
+    padding: 10%;
 }
 
 #manufa {
