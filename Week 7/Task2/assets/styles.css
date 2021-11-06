@@ -2,23 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 
-.rightnav>a:hover {
-    border-bottom: black 3px solid;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Adamina', serif;
-    font-weight: 400;
-
-}
-
-
 html {
     margin-left: 5%;
     margin-right: 10%;
 }
+
 
 .maincontainer {
     display: grid;
@@ -39,11 +27,17 @@ html {
 }
 
 
+/*navigation*/
 
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Adamina', serif;
+    font-weight: 400;
 
+}
 
 /*navigation left side */
-
 .nav1 {
     grid-area: nav1;
     left: 0px;
@@ -73,14 +67,14 @@ html {
 .nav2 {
     grid-area: nav2;
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: 100%;
     grid-template-columns: 1fr 1fr;
 }
 
 .leftnav {
 
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: 100%;
     grid-template-columns: 5% 30%;
     justify-content: start;
 
@@ -88,8 +82,7 @@ html {
 
 #searchbar {
     border: 0px;
-    font-size: 17;
-
+    font-size: 17px;
 }
 
 .leftnav>img {
@@ -98,13 +91,16 @@ html {
 
 .rightnav {
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: 100%;
     grid-template-columns: 15% 15% 25% 15% 10% 10%;
     justify-content: end;
     align-items: center;
     justify-items: center;
 }
 
+.rightnav>a:hover {
+    border-bottom: black 3px solid;
+}
 
 #manufa {
     justify-self: start;
@@ -113,6 +109,8 @@ html {
 #person {
     justify-self: start;
 }
+
+/*main content*/
 
 .main {
     margin-top: 5%;
@@ -141,7 +139,10 @@ html {
 .div1 {
     grid-area: img1;
 
+}
 
+.img1 {
+    object-position: 60% top;
 }
 
 .div2 {
@@ -149,51 +150,34 @@ html {
 
 }
 
+.img2 {
+    object-position: 0% top;
+}
+
 .div3 {
     grid-area: img3;
-
-
 }
 
 .div4 {
     grid-area: img4;
-
-
 }
 
 .div5 {
     grid-area: img5;
-
-
 }
 
 .div6 {
     grid-area: img6;
-
-
 }
 
 .div7 {
     grid-area: img7;
 }
 
-#img7 {
-
+.img7 {
     object-position: 0% bottom;
-
-}
-
-.img1 {
-    object-position: 60% top;
-
-}
-
-.img2 {
-    object-position: 0% top;
 }
 
 .div8 {
     grid-area: img8;
-
-
 }
