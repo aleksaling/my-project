@@ -17,6 +17,7 @@ a {
 
 html {
     margin-left: 5%;
+    margin-right: 10%;
 }
 
 .maincontainer {
@@ -71,7 +72,6 @@ html {
 
 .nav2 {
     grid-area: nav2;
-    position: relative;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: 1fr 1fr;
@@ -81,13 +81,14 @@ html {
 
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: 5% 20%;
+    grid-template-columns: 5% 30%;
     justify-content: start;
 
 }
 
-input {
+#searchbar {
     border: 0px;
+    font-size: 17;
 
 }
 
@@ -104,9 +105,6 @@ input {
     justify-items: center;
 }
 
-.rightnav>* {
-    padding: 10%;
-}
 
 #manufa {
     justify-self: start;
@@ -122,68 +120,80 @@ input {
     grid-area: main;
     display: grid;
     grid-template-rows: 30% 30% 30% 30%;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas:
-        "img1 img1 img3 img4"
-        "img2 img2 img3 img4"
-        "img5 img6 img7 img7"
-        "img5 img6 img8 img8";
-    gap: 20px;
+        "img1 img1 img1 img3 img4"
+        "img2 img2 img2 img3 img4"
+        "img5 img6 img7 img7 img7"
+        "img5 img6 img8 img8 img8";
+    gap: 10px;
+}
+
+
+.main>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.div1 {
+    grid-area: img1;
+
+
+}
+
+.div2 {
+    grid-area: img2;
+
+}
+
+.div3 {
+    grid-area: img3;
+
+
+}
+
+.div4 {
+    grid-area: img4;
+
+
+}
+
+.div5 {
+    grid-area: img5;
+
+
+}
+
+.div6 {
+    grid-area: img6;
+
+
+}
+
+.div7 {
+    grid-area: img7;
+}
+
+#img7 {
+
+    object-position: 0% bottom;
+
 }
 
 .img1 {
-    grid-area: img1;
-    background-image: url(/Week6/Task3/assets/images/upto50.png);
+    object-position: 60% top;
 
-    background-size: 100% 100%;
 }
 
 .img2 {
-    grid-area: img2;
-    background-image: url(/Week6/Task3/assets/images/summer50.png);
-
-    background-size: 100% 100%;
+    object-position: 0% top;
 }
 
-.img3 {
-    grid-area: img3;
-    background-image: url(/Week6/Task3/assets/images/pinkhair.png);
-
-    background-size: 100% 100%;
-}
-
-.img4 {
-    grid-area: img4;
-    background-image: url(/Week6/Task3/assets/images/curlyhair.png);
-
-    background-size: 100% 100%;
-}
-
-.img5 {
-    grid-area: img5;
-    background-image: url(/Week6/Task3/assets/images/nightdress.png);
-
-    background-size: 100% 100%;
-}
-
-.img6 {
-    grid-area: img6;
-    background-image: url(/Week6/Task3/assets/images/whitehair.png);
-
-    background-size: 100% 100%;
-}
-
-.img7 {
-    grid-area: img7;
-    background-image: url(/Week6/Task3/assets/images/bluehair.png);
-
-    background-size: 100% 100%;
-}
-
-.img8 {
+.div8 {
     grid-area: img8;
-    background-image: url(/Week6/Task3/assets/images/redhair.png);
 
-    background-size: 100% 100%;
 
 }
