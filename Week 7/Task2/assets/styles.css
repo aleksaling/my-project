@@ -2,10 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 
-html {
-    margin-left: 5%;
-    margin-right: 10%;
-}
+
 
 
 .maincontainer {
@@ -39,6 +36,7 @@ a {
 
 /*navigation left side */
 .nav1 {
+    margin-left: 10%;
     grid-area: nav1;
     left: 0px;
     display: grid;
@@ -69,15 +67,15 @@ a {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 1fr 1fr;
+    justify-content: end;
 }
 
 .leftnav {
-
+    margin-left: 10%;
+    width: 40%;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 5% 30%;
-    justify-content: start;
-
+    grid-template-columns: 1fr 2fr;
 }
 
 #searchbar {
@@ -91,11 +89,11 @@ a {
 
 .rightnav {
     display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 15% 15% 25% 15% 10% 10%;
-    justify-content: end;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-items: center;
+    gap: 5px;
 }
 
 .rightnav>a:hover {
@@ -113,8 +111,7 @@ a {
 /*main content*/
 
 .main {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% 10% 0% 5%;
     grid-area: main;
     display: grid;
     grid-template-rows: 30% 30% 30% 30%;
@@ -181,3 +178,18 @@ a {
 .div8 {
     grid-area: img8;
 }
+
+@media screen and (max-width:768px) and (min-width:481px) {
+    .maincontainer {
+        grid-template-columns: 20% 1fr 1fr;
+    }
+
+    .nav1 {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width:480px) {
+        .nav1 {
+            background-color: red;
+        }
+    }
