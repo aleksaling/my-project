@@ -21,7 +21,7 @@ header {
     background-color: rgb(219, 219, 219)
 }
 
-/* проблема - как бы сдвинуть текст [Основная часть] в центр, не создавая подконтейнер*/
+
 .maindiv {
     grid-area: 2/1/2/1;
     display: grid;
@@ -35,6 +35,10 @@ header {
 
 .box {
     background-color: yellow;
+}
+
+.box0 {
+    grid-area: 1/1/2/3;
 }
 
 .box1 {
