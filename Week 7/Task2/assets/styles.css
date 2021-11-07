@@ -53,7 +53,7 @@ a {
 }
 
 #eight>img {
-    width: 20%;
+    max-width: 20%;
 }
 
 #eight {
@@ -82,6 +82,8 @@ a {
     border: 0px;
     font-size: 17px;
 }
+
+
 
 .leftnav>img {
     margin: auto;
@@ -189,11 +191,156 @@ a {
 
     }
 
+    .nav1 img {
+        display: none;
+    }
+
+
+
+
+
+    #searchbar {
+
+        font-size: small;
+
+    }
+
+
+    .rightnav {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 10% 10% 25% 25% 10% 5%;
+        justify-items: right;
+        align-items: center;
+        gap: 5px;
+        font-size: 10px;
+    }
+
 }
 
-/* не подключается */
-@media screen and (max-width:480px) {
-    .nav1 {
-        background-color: red;
+
+
+
+@media screen and (max-width: 480px) {
+    .gridcontainer {
+        height: 100vh;
+        width: 90vw;
+        display: grid;
+        grid-template-rows: 10% 20% 20% 50%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "nav2 nav2"
+            "main main"
+            "main main"
+            "nav1 nav1";
     }
+
+
+    /*navigation top part */
+
+    .nav2 {
+        grid-area: nav2;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 20% 80%;
+        justify-content: right;
+    }
+
+    .leftnav {
+        margin-left: 0%;
+
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #searchbar {
+        opacity: 0;
+        font-size: small;
+
+    }
+
+    #searchbar:hover {
+        opacity: 1;
+        z-index: 2;
+        width: 100vw;
+    }
+
+    .leftnav>img {
+        margin: auto;
+    }
+
+    .rightnav {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 15% 10% 25% 25% 10% 5%;
+        align-items: center;
+        justify-items: center;
+        gap: 8px;
+        font-size: 10px;
+    }
+
+
+
+    /*main content*/
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 40% 40% 40% 40%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-areas:
+            "img1 img1 img1 img3 img4"
+            "img2 img2 img2 img3 img4"
+            "img5 img6 img7 img7 img7"
+            "img5 img6 img8 img8 img8";
+        gap: 10px;
+
+
+
+    }
+
+    /*navigation from left side moved to bottom */
+
+    .nav1 {
+        margin-top: 50%;
+        margin-left: 15% !important;
+        grid-area: nav1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 10% 10% 10%;
+        gap: 0;
+        height: 100%;
+    }
+
+    #eight {
+        align-self: center;
+    }
+
+
+    .nav1>* {
+        padding: 0px 0 0px 0;
+
+        font-size: 10px;
+    }
+
+    .nav1 img {
+        width: 10px;
+    }
+
+    #logo {
+        grid-area: 1/1/1/4;
+        justify-self: center;
+
+
+    }
+
+    #logo img {
+        width: 100%;
+        z-index: -1;
+    }
+
+
+
+
+
 }
