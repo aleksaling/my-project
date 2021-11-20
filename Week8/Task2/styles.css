@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Roboto:wght@100;700;900&display=swap');
+
 .header {
     display: flex;
     flex-direction: row;
@@ -9,41 +11,56 @@
     background-color: #5222D0;
     border-radius: 100px;
     color: white;
+    width: 115px;
+    height: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border: 0;
+}
+
+.features {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 .container-flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid green;
     padding: 40px;
-}
-
-.container-flex * {
-    border: 1px solid red;
 
 }
 
 .block-1__picture {
-    text-align: center;
     height: 270px;
     width: 365px;
 }
 
+.block-1__text {
+    height: 160px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.block-1__text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
 
 .block-1__form-box {
     display: flex;
     flex-direction: column;
     background-color: #EC615B;
-    height: ;
+    color: white;
+    height: 160px;
+    padding: 0 0 40px 10px;
 }
 
-.block-1__form-box>input {
-    margin: 5px;
-}
-
-.block-1__picture img {
-    object-fit: contain;
+.block-1__form-box_form {
+    margin: 0 15px 20px 0;
+    height: 40px;
+    border: 0;
 }
 
 .block-1__form-box_button {
@@ -51,6 +68,8 @@
     border-radius: 100px;
     color: white;
     width: 130px;
+    height: 38px;
+    border: 0;
 }
 
 .container-footer {
@@ -58,4 +77,6 @@
     width: 40%;
     flex-direction: row;
     justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
