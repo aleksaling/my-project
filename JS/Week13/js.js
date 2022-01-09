@@ -1,5 +1,10 @@
+// function GetName () {
+//     alert (`Привет ${prompt ("Как тебя зовут?")}`);
+// }
+
 function GetName () {
-    alert (`Привет ${prompt ("Как тебя зовут?")}`);
+    let name = prompt ("Как тебя зовут?");
+    alert (`Привет ${name}`);
 }
 
 
