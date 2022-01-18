@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+.Calculator {
+    padding: 20px;
+}
+.Calculator >* {
+    padding: 20px;
+}
+body {
+    text-align: center;
+}
+button {
+    margin-top: 10px;
+}
+input {
+    width: 20px;
+}
+    </style>
+</head>
+<body>
+
+<!-- Спроси имя -->
+
+    <button OnClick="GetName();">Нажми на меня</button>
+
+
+<!-- Калькулятор -->
+
+<div class="Calculator">
+    <div>Калькулятор</div>
+    <p>1. Введите два числа</p>
+    <input id="input1" type="text">
+    <input id="input2" type="text">
+    <br>
+    <br>
+    <p>2. Выберите операцию</p>
+<div class="buttons">
+    <button OnClick="sum()">+</button>
+    <button OnClick="min()">-</button>
+    <button OnClick="mult()">*</button>
+    <button OnClick="div()">/</button>
+</div>
+3. Ваш результат
+<input id="result"></input>
+</div>
+<script src="js.js">
+</script>   
+</body>
+</html>
