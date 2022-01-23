@@ -1,0 +1,41 @@
+.Calculator {
+    padding: 20px;
+}
+
+.Calculator>* {
+    padding: 20px;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+input {
+    width: 30px;
+}
+
+.color__block {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: blue;
+}
+
+.gallery {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.gallery__image {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
