@@ -11,9 +11,6 @@ switch (document.getElementById("theme").value) {
     case "blue":
     document.getElementById("body").style.backgroundColor = "#41729F";
     break;
-    case "white":
-    document.getElementById("body").style.backgroundColor = "#190204";
-    break;
     default: 
     document.getElementById("body").style.backgroundColor = "white"
 }
