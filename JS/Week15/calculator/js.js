@@ -15,28 +15,50 @@ let b = document.getElementById('input2');
 
 
 function sum() {
+    if (b.value == "" || a.value == "") {
+        document.getElementById('result').value = "Error";
+       alert ("О нет :( Введите число");   
+    }
+    else {
     let result = (+a.value + +b.value);
     console.log(result);
     document.getElementById('result').value = result;
     return result;
+    }
 }
 
 function min() {
+    if (b.value == "" || a.value == "") {
+        document.getElementById('result').value = "Error";
+       alert ("О нет :( Введите число");   
+    }
+    else {
     let result = (+a.value - +b.value);
     console.log(result);
     document.getElementById('result').value = result;
     return result;
+    }
 }
 function mult(){
+    if (b.value == "" || a.value == "") {
+        document.getElementById('result').value = "Error";
+       alert ("О нет :( Введите число");   
+    }
+    else { 
     let result = (+a.value * +b.value);
     console.log(result);
     document.getElementById('result').value = result;
     return result;
 }
+}
 function div(){
     if (b.value == "0") {
        document.getElementById('result').value = "Error";
        alert ("На ноль делить нельзя!");    
+    }
+    else if (b.value == "" || a.value == "") {
+        document.getElementById('result').value = "Error";
+       alert ("О нет :( Введите число");   
     }
     else {
         let result = (+a.value / +b.value);
