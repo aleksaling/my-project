@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<div class="calculator__wrapper">
+    <h1 class="calculator__header">Калькулятор расчета стоимости автомобиля в зависимости от комплектации</h1>
+    <form class="form__wrapper">
+        <fieldset class="border-style">
+        <select class="auto__brand p-2" id="car-brand" name="user-car"> Марка автомобиля
+            <option value="500000">Toyota</option>
+            <option value="400000">Nissan</option>
+            <option value="300000">Lada</option>
+        </select>
+    </fieldset>
+    <fieldset class="border-style">
+        <select class="auto__usage p-2" id="usage" name="car-usage"> Usage
+            <option value="200000">Новая</option>
+            <option value="0">С пробегом</option>
+        </select>
+    </fieldset>
+    <fieldset class="car-inner border-style">
+        <p>
+        <label for="leather">Кожаный салон</label>
+        <input type="radio" id="leather" name="inner-side" value="20000">
+    </p>
+    <p>
+        <label for="regular">Обычный салон</label>
+        <input type="radio" id="regular" name="inner-side" value="0">
+        </p>
+    </fieldset>
+        <fieldset class="addons border-style">
+        <p>
+        <label for="addon-1">Сигнализация</label>
+        <input id="addon-1" type="checkbox" name="alarm" value="15000">
+        </p>
+        <p>
+        <label for="addon-2">Страховка</label>
+        <input id="addon-2" type="checkbox" name="insurance" value="3000">
+        </p>
+        <p>
+        <label for="addon-3">Доставка до дома</label>
+        <input id="addon-3" type="checkbox" name="delivery" value="5000">
+        </p>
+    </fieldset>
+    
+    </form>
+</div>
+
+<script src="script.js">
+</script> 
+</body>
+</html>
