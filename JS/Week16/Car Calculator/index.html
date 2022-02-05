@@ -10,9 +10,10 @@
 <body>
 <div class="calculator__wrapper">
     <h1 class="calculator__header">Калькулятор расчета стоимости автомобиля в зависимости от комплектации</h1>
-    <form class="form__wrapper">
+    <form id="car__calulator" class="form__wrapper">
         <fieldset class="border-style">
         <select class="auto__brand p-2" id="car-brand" name="user-car"> Марка автомобиля
+           <!-- <option value="0">--Марка--</option> -->
             <option value="500000">Toyota</option>
             <option value="400000">Nissan</option>
             <option value="300000">Lada</option>
@@ -20,6 +21,7 @@
     </fieldset>
     <fieldset class="border-style">
         <select class="auto__usage p-2" id="usage" name="car-usage"> Usage
+          <!-- <option value="0">--Пробег--</option> -->
             <option value="200000">Новая</option>
             <option value="0">С пробегом</option>
         </select>
@@ -37,19 +39,22 @@
         <fieldset class="addons border-style">
         <p>
         <label for="addon-1">Сигнализация</label>
-        <input id="addon-1" type="checkbox" name="alarm" value="15000">
+        <input id="addon-1" type="checkbox" name="addon" value="15000">
         </p>
         <p>
         <label for="addon-2">Страховка</label>
-        <input id="addon-2" type="checkbox" name="insurance" value="3000">
+        <input id="addon-2" type="checkbox" name="addon" value="3000">
         </p>
         <p>
         <label for="addon-3">Доставка до дома</label>
-        <input id="addon-3" type="checkbox" name="delivery" value="5000">
+        <input id="addon-3" type="checkbox" name="addon" value="5000">
         </p>
     </fieldset>
-    
     </form>
+    <button onClick="calcTotal()")>Click Me</button>
+    <div id="form-result">
+
+    </div>
 </div>
 
 <script src="script.js">
