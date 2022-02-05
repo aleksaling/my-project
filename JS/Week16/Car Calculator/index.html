@@ -13,7 +13,7 @@
     <form id="car__calulator" class="form__wrapper">
         <fieldset class="border-style">
         <select class="auto__brand p-2" id="car-brand" name="user-car"> Марка автомобиля
-           <!-- <option value="0">--Марка--</option> -->
+            <option value="0">--Марка--</option>
             <option value="500000">Toyota</option>
             <option value="400000">Nissan</option>
             <option value="300000">Lada</option>
@@ -21,7 +21,7 @@
     </fieldset>
     <fieldset class="border-style">
         <select class="auto__usage p-2" id="usage" name="car-usage"> Usage
-          <!-- <option value="0">--Пробег--</option> -->
+          <option value="0">--Пробег--</option>
             <option value="200000">Новая</option>
             <option value="0">С пробегом</option>
         </select>
@@ -33,7 +33,7 @@
     </p>
     <p>
         <label for="regular">Обычный салон</label>
-        <input type="radio" id="regular" name="inner-side" value="0">
+        <input type="radio" id="regular" name="inner-side" value="0" checked>
         </p>
     </fieldset>
         <fieldset class="addons border-style">
@@ -51,7 +51,7 @@
         </p>
     </fieldset>
     </form>
-    <button onClick="calcTotal()")>Click Me</button>
+    <button class="form__button" onClick="calcTotal()">Считать</button>
     <div id="form-result">
 
     </div>

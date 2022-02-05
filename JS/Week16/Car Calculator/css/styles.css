@@ -25,4 +25,8 @@
   border-radius: 10px;
   padding: 2px;
 }
+
+.calculator__wrapper .form__button {
+  margin: 0 auto;
+}
 /*# sourceMappingURL=styles.css.map */

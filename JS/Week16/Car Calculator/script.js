@@ -1,46 +1,38 @@
-let ourSum = [];
-let selectBrand = document.getElementById('car-brand').value;
-const selectUsage = document.getElementById('usage').value;
+const myCount = (ourSum) => {
+    let total = 0;
+    for (let i = 0; i < ourSum.length; i++) {
+    total = total + Number(ourSum[i]);
+    }
+    return total;
+    };
 
-
-
-let calcTotal = function() {
-    const leather = document.getElementById('leather').value;
-    let regular = document.getElementById('regular').value;
-    let addon1 = document.getElementById('addon-1').value;
-    let addon2 = document.getElementById('addon-2').value;
-    let addon3 = document.getElementById('addon-3').value;
+const calcTotal = function() {
+    const ourSum = [];
+    const selectBrand = document.getElementById('car-brand').value;
+    const selectUsage = document.getElementById('usage').value;
+    const leather = document.getElementById('leather');
+    const regular = document.getElementById('regular');
+    const addon1 = document.getElementById('addon-1');
+    const addon2 = document.getElementById('addon-2');
+    const addon3 = document.getElementById('addon-3');
     
-                            if (leather.checked=true) {
-                            ourSum.push(leather);
-                            }
-                            
-                            if (regular.checked=true) {
-                            ourSum.push(regular);
-                            }
-                            
-                            if (addon1.checked=true) {
-                            ourSum.push(addon1);
-                            }
-                            
-                            if (addon2.checked=true) {
-                            ourSum.push(addon2);
-                            }
-                            
-                            if (addon3.checked=true) {
-                            ourSum.push(addon3);
-                            } 
+if (leather.checked) {
+ourSum.push(leather.value);
+}                           
+if (regular.checked) {
+ourSum.push(regular.value);
+}                         
+if (addon1.checked) {
+ourSum.push(addon1.value);
+}        
+
+if (addon2.checked) {
+    ourSum.push(addon2.value);
+}
+if (addon3.checked) {
+    ourSum.push(addon3.value);
+}                                                       
 ourSum.push(selectBrand,selectUsage);  
-                        let total = 0;
-    
-                        let myCount = () => {
-                        for (i = 0; i < ourSum.length; i++) {
-                        total = total + Number(ourSum[i]);
-                        }
-                        return total;
-                        };
-    
-    let totalRes = myCount();   
-    document.getElementById('form-result').innerText= `Итого: ${totalRes}р.`
+document.getElementById('form-result').innerText= `Итого: ${myCount(ourSum)}р.`
 }   
 
