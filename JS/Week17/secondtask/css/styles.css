@@ -1,0 +1,53 @@
+html {
+  background-image: url(../back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html .commenter__wrapper {
+  text-align: center;
+}
+
+html .commenter__wrapper .output__container {
+  width: 40%;
+  height: 40vh;
+  margin: 20px auto;
+  background-color: antiquewhite;
+  border: 1px double black;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 5px;
+}
+
+html .commenter__wrapper .output__container .display-comment {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: honeydew;
+  padding: 5px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow-wrap: break-word;
+}
+
+html .commenter__wrapper .comments {
+  height: 20vh;
+  width: 30vw;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-style: normal;
+}
+
+html .commenter__wrapper .button__cta {
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid palevioletred;
+}
+/*# sourceMappingURL=styles.css.map */
